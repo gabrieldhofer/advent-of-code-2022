@@ -2,7 +2,6 @@ import scala.io.StdIn.readLine
 import scala.io.Source._
 import scala.collection.mutable
 
-
 def solve(lines: List[String]): Int = {
   val result = for x <- lines yield {
     val str = x.split(",")
