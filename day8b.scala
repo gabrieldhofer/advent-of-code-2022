@@ -1,4 +1,3 @@
-
 def left(lines: Array[String], x: Int, y: Int, h: Int, w: Int): Int =
   for i <- y-1 to 0 by -1 do
     if lines(x)(y).toInt <= lines(x)(i).toInt then return y - i
