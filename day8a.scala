@@ -1,5 +1,3 @@
-
-
 def left(lines: Array[String], x: Int, y: Int, h: Int, w: Int): Boolean =
   !(for i <- 0 until y yield lines(x)(y).toInt <= lines(x)(i).toInt).contains(true)
 
