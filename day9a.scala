@@ -1,4 +1,3 @@
-
 def getLines: Array[Array[String]] =
   fromFile("src/main/scala/in.txt").getLines()
     .toArray
