@@ -2,7 +2,7 @@ import scala.io.StdIn.readLine
 import scala.io.Source._
 
 // second parameter is my choice, same order as input
-def play(a: String, b: String): Int = {
+def play(a: String, b: String): Int = 
   if a == "paper" && b == "rock" then 1 + 0
   else if a == "scissors" && b == "rock" then 1 + 6
   else if a == "rock" && b == "rock" then 1 + 3
@@ -12,7 +12,6 @@ def play(a: String, b: String): Int = {
   else if a == "rock" && b == "scissors" then 3 + 0
   else if a == "paper" && b == "scissors" then 3 + 6
   else 3 + 3
-}
 
 @main
 def main(): Unit = 
