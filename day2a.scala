@@ -15,21 +15,14 @@ def play(a: String, b: String): Int = {
 }
 
 @main
-def main(): Unit = {
+def main(): Unit = 
   val lines = fromFile("src/main/scala/in.txt").getLines()
-
-  // A -> Rock, B -> Paper, C -> Scissors
-  // X -> Rock, Y -> Paper, Z -> Scissors
-  // ------------------------------------
   val predictionToValue = Map("X" -> 1, "Y" -> 2, "Z" -> 3)
   val predictionTranslate = Map("A" -> "rock", "B" -> "paper", "C" -> "scissors")
   val suggestionTranslate = Map("X" -> "rock", "Y" -> "paper", "Z" -> "scissors")
   var total: Int = 0
-
-  for x <- lines do {
+  for x <- lines do 
     println(x)
     val oneLine: Array[String] = x.split(" ")
     total += play(predictionTranslate(oneLine(0)), suggestionTranslate(oneLine(1)))
-  }
   println("total: " + total.toString)
-}
