@@ -32,7 +32,7 @@ def op2(arr: Array[(Int, Int)], headPos: (Int, Int)): Array[(Int, Int)] =
 
 def solve(lines: Array[Array[String]]): Int =
   val headPositions: Array[(Int, Int)] = lines.foldLeft(Array((0, 0)))(op)
-  val tailPositions: Array[(Int, Int)]  = headPositions.drop(1).foldLeft(Array((0, 0)))(op2)
+  val tailPositions: Array[(Int, Int)] = headPositions.drop(1).foldLeft(Array((0, 0)))(op2)
   tailPositions.distinct.length
 
 def createSteps(acc: Array[Array[String]], line: Array[String]): Array[Array[String]] =
