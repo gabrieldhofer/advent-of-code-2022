@@ -26,20 +26,5 @@ def main(): Unit =
   val w = lines(0).length
   val part1 = 2*w + 2*h - 4
   val part2 = solve(lines, h, w)
-  println(part2)
   val part3 = part2.map(x => x._3).sum
-  //println("Answer: " + (part1.toInt + part3.toInt))
-
-  println("h: " + h + " w: " + w)
-  println("border: " + (2*h + 2*w - 4))
-  println("---------------------------------------------")
-  val a = 35
-  val b = 35
-  println("left:  " + left(lines, a, b, h, w))
-  println("right: " + right(lines, a, b, h, w))
-  println("up:    " + up(lines, a, b, h, w))
-  println("down:  " + down(lines, a, b, h, w))
-  println("---------------------------------------------")
-  println("part1: " + part1)
-  println("part2: " + part2)
   println("total: " + (part1 + part3))
